@@ -21,7 +21,7 @@
     src: url('../assets/fonts/Raleway-ExtraBold.ttf');
 }
 .accordianWrapper{
-    margin-left: 200px;
+    margin-left: 180px;
 }
 .accordianWrapper h1{
     font-family: 'Bold-font';
@@ -32,4 +32,93 @@
         margin-left: 10px;
     }
     
+}
+/* Accordian Heading */
+.accordianHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.title-container{
+    display: flex;
+}
+.number{
+font-size: 120px;
+font-family: 'Regular-font';
+}
+.sectionTitle{
+    font-size: 120px;
+    font-family: 'Bold-font';
+    margin-left: 10%;
+}
+.icon{
+    height: 100px;
+    width: 110px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Thin-font';
+    font-size: 70px;
+    margin-left: 30%;
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+}
+.summary-container{
+    align-self: center;
+}
+.summary{
+    font-family: 'Thin-font';
+    text-align: left;
+}
+
+/* Accordian Content */
+.accordianContent{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+    height: 0;
+    opacity: 0;
+}
+.content-links{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.content-links a{
+    font-family: 'SemiBold-font';
+    color: var(--black);
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.content-links a:hover{
+    color: var(--purple);
+}
+.content-text{
+    width: 50%;
+}
+.contextHeading{
+    font-family: 'Regular-font';
+    font-weight: 100;
+}
+.content-paragraphs{
+    overflow: auto;
+    font-family: 'Thin-font';
+}
+/* Resume Content Styles */
+.experienceHeading{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: 'Regular-font';
+    font-weight: 100;
 }
