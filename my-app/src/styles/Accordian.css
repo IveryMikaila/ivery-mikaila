@@ -23,6 +23,10 @@
 .accordianWrapper{
     margin-left: 200px;
 }
+.accordianWrapper h1{
+    font-family: 'Bold-font';
+}
+
 @media screen and (max-width: 667px) {
     .accordianWrapper{
         margin-left: 10px;
