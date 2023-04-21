@@ -1,0 +1,31 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --purple:#8F00FF;
+    --grey:#D3D4D4;
+}
+@font-face {
+    font-family: 'Thin-font';
+    src: url('../assets/fonts/Raleway-Thin.ttf');
+}
+@font-face {
+    font-family: 'Regular-font';
+    src: url('../assets/fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'SemiBold-font';
+    src: url('../assets/fonts/Raleway-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Bold-font';
+    src: url('../assets/fonts/Raleway-ExtraBold.ttf');
+}
+.accordianWrapper{
+    margin-left: 200px;
+}
+@media screen and (max-width: 667px) {
+    .accordianWrapper{
+        margin-left: 10px;
+    }
+    
+}

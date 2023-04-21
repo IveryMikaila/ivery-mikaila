@@ -1,0 +1,125 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --purple:#8F00FF;
+    --grey:#D3D4D4;
+}
+@font-face {
+    font-family: 'Thin-font';
+    src: url('../assets/fonts/Raleway-Thin.ttf');
+}
+@font-face {
+    font-family: 'Regular-font';
+    src: url('../assets/fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'SemiBold-font';
+    src: url('../assets/fonts/Raleway-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Bold-font';
+    src: url('../assets/fonts/Raleway-ExtraBold.ttf');
+}
+/* Navbar Styles */
+
+.navBar{
+    margin-left: 200px;
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-between;
+    font-family: 'SemiBold-font';
+    color: var(--grey);
+    backdrop-filter: blur(10px);
+   padding-top: 30px;
+}
+.navBar a{
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-right: 4px;
+}
+.navBar a:hover{
+    color: var(--purple);
+}
+.navRightLinks{
+    display: flex;
+    position: relative;
+}
+#emailBtn{
+    background-color: var(--black);
+    color: var(--white) !important;
+    padding: 20px 30px;
+    margin-left: 20px;
+    margin-top: 0;
+    position: relative;
+    top: -21px;
+margin-right: 26px;
+z-index: 10;
+}
+/* .emailBtnCaption{
+    font-size: 50px;
+    position: relative;
+    top: -18px;
+} */
+@media screen and (max-width: 667px) {
+    .navBar{
+        justify-content: flex-end;
+    }
+    .navLeftLinks{
+        display: none;
+
+    } 
+}
+
+    /* Sidebar Styles */
+    .sidebarMenu-svg{
+        font-size: 1.5rem;
+        position: fixed;
+        top: 0;
+        margin: 30px;
+        cursor: pointer;
+    }
+
+    .sideBar{
+        background-color:var(--white);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 7;
+        top: -100%;
+        transition: all 1s ease-in-out;
+    }
+    .sideBar.active{
+        top: 0%;
+        transition: all 1s ease-in-out;
+    }
+    .sidebarMenuClose-svg{
+        margin: 30px;
+        color: var(--white);
+        font-size: 1.5rem;
+        background-color: var(--black);
+        padding: 15px;
+        cursor: pointer;
+    }
+    .sideBar-items{
+        margin-left: 0px;
+    }
+.sideBar-item{
+    margin-bottom: 20px;
+   list-style: none;
+}
+.sideBar-item a{
+    font-family: 'SemiBold-font';
+    color: var(--grey);
+    text-decoration: none;
+}
+.sideBar-item a:hover{
+    color: var(--purple);
+}
+@media screen and (min-width: 667px) {
+    .sidebarMenu-svg{
+        display: none;
+    }
+
+}
