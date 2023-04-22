@@ -37,7 +37,7 @@ const Home = () => {
   id2={AboutContent.id2}
   id3={AboutContent.id3}
   />
-    <Accordian
+    {/* <Accordian
   headingNumber = {Work.headingNumber}
   headingTitle= {Work.headingTitle}
   headingSummary= {Work.headingSummary}
@@ -56,8 +56,8 @@ const Home = () => {
   id1={WorkContent.id1}
   id2={WorkContent.id2}
   id3={WorkContent.id3}
-  />
-      <Accordian
+  /> */}
+      {/* <Accordian
   headingNumber = {Resume.headingNumber}
   headingTitle= {Resume.headingTitle}
   headingSummary= {Resume.headingSummary}
@@ -76,7 +76,7 @@ const Home = () => {
   id1={ResumeContent.id1}
   id2={ResumeContent.id2}
   id3={ResumeContent.id3}
-  />
+  /> */}
   </>
   )
 }

@@ -4,12 +4,54 @@ import '../../styles/Accordian.css';
 const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,contentLink2,contentLink3,content1Heading,content2Heading,content3Heading,content1,content2,content3,path1,path2,path3,id1,id2,id3}) => {
 
   return (
-    <div className='accordianWrapper'>
+     <div className='accordionWrapper'> 
+     {/* Section 1 */}
+<div className='accordion-tab'>
+<input type='radio' name='acc' id='acc1' />
+<label for='acc1'>
+  <h2>01</h2>
+  <h3>About</h3>
+</label>
+<div className='content'>
+  <p>
+  Lorem ipsum dolor sit amet. At temporibus magni et aliquam totam eos nostrum tempora aut incidunt voluptas ea commodi eaque sit iste incidunt 33 enim nihil. Cum autem minus non doloribus incidunt ea asperiores nulla non assumenda aliquid.
 
+Et expedita fugit nam voluptatem voluptates ut adipisci molestiae vel facere eius et quisquam deserunt. Non recusandae obcaecati qui blanditiis dicta est assumenda dolores quo nemo sint non cupiditate ullam. Aut nulla architecto aut debitis omnis ut asperiores sint.
+  </p>
+</div>
+</div>
+{/* Section2 */}
+<div className='accordion-tab'>
+<input type='radio' name='acc' id='acc2' />
+<label for='acc2'>
+  <h2>02</h2>
+  <h3>Work</h3>
+</label>
+<div className='content'>
+  <p>
+  Lorem ipsum dolor sit amet. At temporibus magni et aliquam totam eos nostrum tempora aut incidunt voluptas ea commodi eaque sit iste incidunt 33 enim nihil. Cum autem minus non doloribus incidunt ea asperiores nulla non assumenda aliquid.
 
-     
-      
-      {/* Accordian Heading */}
+Et expedita fugit nam voluptatem voluptates ut adipisci molestiae vel facere eius et quisquam deserunt. Non recusandae obcaecati qui blanditiis dicta est assumenda dolores quo nemo sint non cupiditate ullam. Aut nulla architecto aut debitis omnis ut asperiores sint.
+  </p>
+</div>
+</div>
+{/* Section 3 */}
+<div className='accordion-tab'>
+<input type='radio' name='acc' id='acc3' />
+<label for='acc3'>
+  <h2>03</h2>
+  <h3>Resume</h3>
+</label>
+<div className='content'>
+  <p>
+  Lorem ipsum dolor sit amet. At temporibus magni et aliquam totam eos nostrum tempora aut incidunt voluptas ea commodi eaque sit iste incidunt 33 enim nihil. Cum autem minus non doloribus incidunt ea asperiores nulla non assumenda aliquid.
+
+Et expedita fugit nam voluptatem voluptates ut adipisci molestiae vel facere eius et quisquam deserunt. Non recusandae obcaecati qui blanditiis dicta est assumenda dolores quo nemo sint non cupiditate ullam. Aut nulla architecto aut debitis omnis ut asperiores sint.
+  </p>
+</div>
+</div>
+
+  {/* Accordian Heading */}
 {/* <div className='accordianHeading'>
     <div className='title-container'>
       <div className='sectionTitle'> <span className='number'>{headingNumber}</span>{headingTitle}</div>
@@ -46,7 +88,7 @@ const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,conte
 </div>
   </div>
 </div> */}
-    </div>
+   </div> 
   )
 }
 

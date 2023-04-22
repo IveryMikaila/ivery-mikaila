@@ -1,6 +1,7 @@
 html,body{
   margin: 0;
-  overflow: hidden;
+  height: 100%;
+  /* overflow: hidden; */
 }
 
 body{
@@ -9,7 +10,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     backdrop-filter: blur(40px);
-    min-height: 100vh;
 }
 @media screen and (max-width: 667px) {
 body{
