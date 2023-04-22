@@ -19,11 +19,11 @@ const Home = () => {
   return (
   <>
   <Navbar />
-  <div className='logoContainer'>
+  {/* <div className='logoContainer'>
   <div className='homeLogo'>
    <Link to={'/'}>Mikaila Ivery</Link>
   </div>
-  </div>
+  </div> */}
   <Accordian
   headingNumber = {About.headingNumber}
   headingTitle= {About.headingTitle}

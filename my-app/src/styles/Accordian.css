@@ -21,7 +21,7 @@
     src: url('../assets/fonts/Raleway-ExtraBold.ttf');
 }
 .accordianWrapper{
-    margin-left: 180px;
+    /* margin-left: 10.8em; */
 }
 .accordianWrapper h1{
     font-family: 'Bold-font';
@@ -41,29 +41,31 @@
     border-bottom: 1px solid var(--grey);
     padding-bottom: 30px;
     cursor: pointer;
+    transition: 0.45s;
 }
+
 .title-container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
 }
 .number{
+    margin-left: 10px;
+    margin-right: 40px;
 font-size: 120px;
 font-family: 'Regular-font';
 }
 .sectionTitle{
     font-size: 120px;
     font-family: 'Bold-font';
-    margin-left: 10%;
 }
 .icon{
-    height: 100px;
-    width: 110px;
-    padding-top: 20px;
-    text-align: center;
-    font-family: 'Thin-font';
-    font-size: 70px;
-    margin-left: 30%;
-    border: 1px solid var(--grey);
-    border-radius: 50%;
+    font-size: 80px;
+   transition: all 250ms ease-in-out;
+}
+.icon:hover{
+    color: var(--purple);
 }
 .summary-container{
     align-self: center;
@@ -78,13 +80,15 @@ font-family: 'Regular-font';
     display: flex;
     justify-content: flex-start;
     padding-bottom: 30px;
+    height: 500px;
+    overflow: scroll;
 }
 
 .content-links{
     display: flex;
     flex-direction: column;
-    width: 200px;
-    margin-right: 10%;
+    margin: 20px;
+    margin-right: 40px;
 }
 
 .content-links a{
@@ -92,10 +96,7 @@ font-family: 'Regular-font';
     color: var(--black);
     text-decoration: none;
     font-size: 15px;
-    margin-left: 25px;
-    margin-right: 4px;
     margin-bottom: 10px;
-    margin-top: 10px;
 }
 .content-links a:hover{
     color: var(--purple);
@@ -108,10 +109,17 @@ font-family: 'Regular-font';
     font-weight: 100;
 }
 .content-paragraphs{
-    overflow: auto;
     font-family: 'Thin-font';
 }
-
+.endP{
+    padding-bottom: 200px;
+}
+@media screen and (max-width: 667px) {
+    .endP{
+        padding-bottom: 200px;
+    }
+    
+}
 /* Resume Content Styles */
 .experienceHeading{
     display: flex;
@@ -119,5 +127,4 @@ font-family: 'Regular-font';
     justify-content: space-between;
     font-size: 10px;
     font-family: 'Regular-font';
-    font-weight: 100;
 }

@@ -21,7 +21,7 @@
     src: url('../assets/fonts/Raleway-ExtraBold.ttf');
 }
 
-.logoContainer{
+/* .logoContainer{
     position: relative;
     display: flex;
 }
@@ -41,8 +41,8 @@ color: var(--grey);
 font-size: 15px;
 position: relative;
 top: 40%;
-}
-.homeLogo a:hover{
+} */
+/* .homeLogo a:hover{
     color: var(--purple);
 }
 @media screen and (max-width: 667px) {
@@ -50,4 +50,4 @@ top: 40%;
     .logoContainer{
         display: none;
     }
-}
+} */

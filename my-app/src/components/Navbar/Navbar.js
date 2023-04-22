@@ -10,7 +10,10 @@ const Navbar = () => {
   return (
     <>
 {/* Navigation Bar */}
-  <div id='navBar' className='navBar'>
+<div className='navWrapper'>
+<Link to={'/'} className='logo'>Mikaila Ivery</Link>
+
+<div id='navBar' className='navBar'>
   <div className='navLeftLinks'>
   <Link to={''}>GitHub</Link>
  <Link to={''}>LinkedIn</Link>
@@ -18,10 +21,12 @@ const Navbar = () => {
  <Link to={''}>SheCodes</Link>
   </div>
 <div className='navRightLinks'>
-  <div className='emailBtnCaption'>Hello</div>
-  <Link id='emailBtn' to={"mailto:iverymikaila@gmail.com"}>Email Me</Link>
+  <span className='emailBtnCaption'>Hello</span>
+  <Link className='emailButton' to={"mailto:iverymikaila@gmail.com"}>Email Me</Link>
 </div>
     </div>
+</div>
+
 {/* Sidebar Menu */}
 <svg className='sidebarMenu-svg' onClick={showSidebar}  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
 {/* Sidebar */}
