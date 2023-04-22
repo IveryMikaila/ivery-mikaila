@@ -78,14 +78,12 @@ font-family: 'Regular-font';
     display: flex;
     justify-content: flex-start;
     padding-bottom: 30px;
-    overflow: hidden;
-    transition: all 600ms ease-in-out;
-    height: 0;
-    opacity: 0;
 }
+
 .content-links{
     display: flex;
     flex-direction: column;
+    width: 200px;
     margin-right: 10%;
 }
 
@@ -113,6 +111,7 @@ font-family: 'Regular-font';
     overflow: auto;
     font-family: 'Thin-font';
 }
+
 /* Resume Content Styles */
 .experienceHeading{
     display: flex;

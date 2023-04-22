@@ -1,16 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../../styles/Accordian.css';
 
 const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,contentLink2,contentLink3,content1Heading,content2Heading,content3Heading,content1,content2,content3,path1,path2,path3,id1,id2,id3}) => {
+const [show, setShow] = useState(true);
+
   return (
     <div className='accordianWrapper'>
       
       {/* Accordian Heading */}
-<div className='accordianHeading'>
+<div className='accordianHeading' onClick={()=>setShow(!show)}>
     <div className='title-container'>
       <div className='number'>{headingNumber}</div>
       <div className='sectionTitle'>{headingTitle}</div>
-      <div className='icon'>+</div>
+      <div className='icon' >
+        +
+      </div>
     </div>
     <div className='summary-container'>
       <div className='summary'>
@@ -20,7 +24,8 @@ const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,conte
 </div>
 
 {/* Accordian Content */}
-<div className='accordianContent'>
+{show? 
+  <div className="accordianContent">
   <div className='content-links'>
 <a href={path1}>{contentLink1}</a>
 <a href={path2}>{contentLink2}</a>
@@ -41,6 +46,9 @@ const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,conte
 </div>
   </div>
 </div>
+:
+null
+}
     </div>
   )
 }

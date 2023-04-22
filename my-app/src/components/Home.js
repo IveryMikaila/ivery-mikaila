@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
@@ -16,9 +16,6 @@ import {ResumeContent} from './Accordian/Content/ResumeContent';
 
 
 const Home = () => {
-const [active,setActive] = useState(About.headingNumber);
-
-
   return (
   <>
   <Navbar />
@@ -28,8 +25,6 @@ const [active,setActive] = useState(About.headingNumber);
   </div>
   </div>
   <Accordian
-  active={active}
-  setActive={setActive}
   headingNumber = {About.headingNumber}
   headingTitle= {About.headingTitle}
   headingSummary= {About.headingSummary}
@@ -50,8 +45,6 @@ const [active,setActive] = useState(About.headingNumber);
   id3={AboutContent.id3}
   />
     <Accordian
-     active={active}
-     setActive={setActive}
   headingNumber = {Work.headingNumber}
   headingTitle= {Work.headingTitle}
   headingSummary= {Work.headingSummary}
@@ -72,8 +65,6 @@ const [active,setActive] = useState(About.headingNumber);
   id3={WorkContent.id3}
   />
       <Accordian
-       active={active}
-       setActive={setActive}
   headingNumber = {Resume.headingNumber}
   headingTitle= {Resume.headingTitle}
   headingSummary= {Resume.headingSummary}
