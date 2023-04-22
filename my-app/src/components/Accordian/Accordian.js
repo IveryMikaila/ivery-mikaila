@@ -5,9 +5,12 @@ const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,conte
 
   return (
     <div className='accordianWrapper'>
+
+
+     
       
       {/* Accordian Heading */}
-<div className='accordianHeading'>
+{/* <div className='accordianHeading'>
     <div className='title-container'>
       <div className='sectionTitle'> <span className='number'>{headingNumber}</span>{headingTitle}</div>
       <div className='icon' >
@@ -19,10 +22,10 @@ const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,conte
         {headingSummary}
       </div>
   </div>
-</div>
+</div> */}
 
 {/* Accordian Content */}
-  <div className="accordianContent">
+  {/* <div className="accordianContent">
   <div className='content-links'>
 <a href={path1}>{contentLink1}</a>
 <a href={path2}>{contentLink2}</a>
@@ -42,7 +45,7 @@ const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,conte
 {content3}
 </div>
   </div>
-</div>
+</div> */}
     </div>
   )
 }

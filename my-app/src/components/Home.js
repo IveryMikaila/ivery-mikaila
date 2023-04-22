@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import '../styles/Home.css';
 
 //Component Imports
 import Navbar from './Navbar/Navbar';
@@ -19,11 +17,6 @@ const Home = () => {
   return (
   <>
   <Navbar />
-  {/* <div className='logoContainer'>
-  <div className='homeLogo'>
-   <Link to={'/'}>Mikaila Ivery</Link>
-  </div>
-  </div> */}
   <Accordian
   headingNumber = {About.headingNumber}
   headingTitle= {About.headingTitle}
