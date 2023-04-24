@@ -45,8 +45,10 @@ else{
 <div className='accordion-tab ' id='tab1' onClick={checkboxChecker} >
 <input type='checkbox' name='acc' id='acc1'  />
 <label for='acc1'>
-  <h3 className='heading-title'><span className='heading-number'>{About.headingNumber}</span>{About.headingTitle}</h3>
+<span className='heading-number'>{About.headingNumber}</span>
+  <h3 className='heading-title'>{About.headingTitle}
   <p className='heading-summary'>{About.headingSummary}</p>
+  </h3>
 </label>
 <div className='content'>
  <div className='content-links'>
@@ -55,11 +57,11 @@ else{
 <a href={'/#about3'}>{AboutContent.contentLink3}</a> 
  </div>
  <div className='content-text'>
-  <div className='content-heading'>{AboutContent.content1Heading}</div>
+  <div id='about1' className='content-heading'>{AboutContent.content1Heading}</div>
  <div className='content1'> {AboutContent.content1} </div>
- <div className='content-heading'>{AboutContent.content2Heading}</div>
+ <div id='about2' className='content-heading'>{AboutContent.content2Heading}</div>
  <div className='content2'> {AboutContent.content2} </div>
- <div className='content-heading'>{AboutContent.content3Heading}</div>
+ <div id='about3' className='content-heading'>{AboutContent.content3Heading}</div>
  <div className='content3'> {AboutContent.content3} </div>
  </div>
 </div>
@@ -68,21 +70,23 @@ else{
 <div className='accordion-tab ' id='tab2' onClick={checkboxChecker}>
 <input type='checkbox' name='acc' id='acc2' />
 <label for='acc2'>
-  <h3 className='heading-title'><span className='heading-number'>{Work.headingNumber}</span>{Work.headingTitle}</h3>
+<span className='heading-number'>{Work.headingNumber}</span>
+  <h3 className='heading-title'>{Work.headingTitle}
   <p className='heading-summary'>{Work.headingSummary}</p>
+  </h3>
 </label>
 <div className='content'>
 <div className='content-links'>
-<a href={'/#about1'}>{WorkContent.contentLink1}</a>
-<a href='/#about2'>{WorkContent.contentLink2}</a>
-<a href={'/#about3'}>{WorkContent.contentLink3}</a> 
+<a href={'/#work1'}>{WorkContent.contentLink1}</a>
+<a href='/#work2'>{WorkContent.contentLink2}</a>
+<a href={'/#work3'}>{WorkContent.contentLink3}</a> 
  </div>
  <div className='content-text'>
-  <div className='content-heading'>{WorkContent.content1Heading}</div>
+  <div id='work1' className='content-heading'>{WorkContent.content1Heading}</div>
  <div className='content1'> {WorkContent.content1} </div>
- <div className='content-heading'>{WorkContent.content2Heading}</div>
+ <div id='work2' className='content-heading'>{WorkContent.content2Heading}</div>
  <div className='content2'> {WorkContent.content2} </div>
- <div className='content-heading'>{WorkContent.content3Heading}</div>
+ <div id='work3' className='content-heading'>{WorkContent.content3Heading}</div>
  <div className='content3'> {WorkContent.content3} </div>
  </div>
 </div>
@@ -91,21 +95,23 @@ else{
 <div className='accordion-tab ' id='tab3' onClick={checkboxChecker}>
 <input type='checkbox' name='acc' id='acc3' />
 <label for='acc3'>
-  <h3 className='heading-title'><span className='heading-number'>{Resume.headingNumber}</span>{Resume.headingTitle}</h3>
+<span className='heading-number'>{Resume.headingNumber}</span>
+  <h3 className='heading-title'>{Resume.headingTitle}
   <p className='heading-summary'>{Resume.headingSummary}</p>
+  </h3>
 </label>
 <div className='content'>
 <div className='content-links'>
-<a href={'/#about1'}>{ResumeContent.contentLink1}</a>
-<a href='/#about2'>{ResumeContent.contentLink2}</a>
-<a href={'/#about3'}>{ResumeContent.contentLink3}</a> 
+<a href={'/#resume1'}>{ResumeContent.contentLink1}</a>
+<a href='/#resume2'>{ResumeContent.contentLink2}</a>
+<a href={'/#resume3'}>{ResumeContent.contentLink3}</a> 
  </div>
  <div className='content-text'>
-  <div className='content-heading'>{ResumeContent.content1Heading}</div>
+  <div id='resume1' className='content-heading'>{ResumeContent.content1Heading}</div>
  <div className='content1'> {ResumeContent.content1} </div>
- <div className='content-heading'>{ResumeContent.content2Heading}</div>
+ <div id='resume2' className='content-heading'>{ResumeContent.content2Heading}</div>
  <div className='content2'> {ResumeContent.content2} </div>
- <div className='content-heading'>{ResumeContent.content3Heading}</div>
+ <div id='resume3' className='content-heading'>{ResumeContent.content3Heading}</div>
  <div className='content3'> {ResumeContent.content3} </div>
  </div>
 </div>

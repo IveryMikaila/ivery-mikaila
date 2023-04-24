@@ -2,6 +2,6 @@ export const About =
     {
         headingNumber:'01',
         headingTitle: 'About',
-        headingSummary:'Quo earum autem in repellat voluptatum aut voluptatibus iure. Sed dolorem aliquid aut ipsum sunt est velit quod. Sit distinctio odit qui consequatur expedita ut'
+        headingSummary:'A brief summary of who I am, how my journey in code began, my passions, my values as a developer, and my goals for the future. '
     }
    ;

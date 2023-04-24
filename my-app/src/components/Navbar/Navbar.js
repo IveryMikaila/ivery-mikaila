@@ -15,10 +15,10 @@ const Navbar = () => {
 
 <div id='navBar' className='navBar'>
   <div className='navLeftLinks'>
-  <Link to={''}>GitHub</Link>
- <Link to={''}>LinkedIn</Link>
- <Link to={''}>Youtube</Link>
- <Link to={''}>SheCodes</Link>
+  <Link target='_blank' to={'https://github.com/IveryMikaila'}>GitHub</Link>
+ <Link target='_blank' to={'https://www.linkedin.com/in/mikaila-ivery-259218223/'}>LinkedIn</Link>
+ <Link target='_blank'  to={'https://www.youtube.com/watch?v=hMif-EdLGAs&ab_channel=MikailaIvery'}>Youtube</Link>
+ <Link target='_blank' to={'https://www.shecodes.io/graduates/28712-mikaila-ivery'}>SheCodes</Link>
   </div>
 <div className='navRightLinks'>
   <span className='emailBtnCaption'>Hello</span>

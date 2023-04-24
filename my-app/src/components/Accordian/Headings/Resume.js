@@ -2,6 +2,6 @@ export const Resume =
     {
         headingNumber:'03',
         headingTitle: 'Resume',
-        headingSummary:'Work experinece, education and certfificatsions. All the jobs Ive ever been employed at,etc'
+        headingSummary:'A synopsis of my relevant work experience, educational background, certifications, and skills that illustrate the developer I am.'
     }
    ;
