@@ -1,93 +1,115 @@
 import React from 'react'
 import '../../styles/Accordian.css';
 
-const Accordian = ({headingNumber,headingTitle,headingSummary,contentLink1,contentLink2,contentLink3,content1Heading,content2Heading,content3Heading,content1,content2,content3,path1,path2,path3,id1,id2,id3}) => {
+// Data Imports
+import {About} from './Headings/About';
+import { AboutContent } from './Content/AboutContent';
+import {Work} from './Headings/Work';
+import{WorkContent} from './Content/WorkContent';
+import {Resume} from './Headings/Resume';
+import {ResumeContent} from './Content/ResumeContent';
+
+const Accordian = () => {
+
+function checkboxChecker () {
+const accordianTab1 = document.getElementById('acc1');
+const accordianTab2 = document.getElementById('acc2');
+const accordianTab3 = document.getElementById('acc3');
+
+const tab1 = document.getElementById('tab1');
+const tab2 = document.getElementById('tab2');
+const tab3 = document.getElementById('tab3');
+
+if (accordianTab1.checked === true){
+tab2.style.display ='none';
+tab3.style.display ="none";
+}
+else if (accordianTab2.checked === true){
+tab1.style.display ="none";
+tab3.style.display = 'none';
+}
+else if(accordianTab3.checked === true){
+tab1.style.display ='none';
+tab2.style.display ='none';
+}
+else{
+  tab1.style.display ='block';
+  tab2.style.display ='block';
+  tab3.style.display ='block';
+}
+ } 
 
   return (
      <div className='accordionWrapper'> 
      {/* Section 1 */}
-<div className='accordion-tab'>
-<input type='radio' name='acc' id='acc1' />
+<div className='accordion-tab ' id='tab1' onClick={checkboxChecker} >
+<input type='checkbox' name='acc' id='acc1'  />
 <label for='acc1'>
-  <h2>01</h2>
-  <h3>About</h3>
+  <h3 className='heading-title'><span className='heading-number'>{About.headingNumber}</span>{About.headingTitle}</h3>
+  <p className='heading-summary'>{About.headingSummary}</p>
 </label>
 <div className='content'>
-  <p>
-  Lorem ipsum dolor sit amet. At temporibus magni et aliquam totam eos nostrum tempora aut incidunt voluptas ea commodi eaque sit iste incidunt 33 enim nihil. Cum autem minus non doloribus incidunt ea asperiores nulla non assumenda aliquid.
-
-Et expedita fugit nam voluptatem voluptates ut adipisci molestiae vel facere eius et quisquam deserunt. Non recusandae obcaecati qui blanditiis dicta est assumenda dolores quo nemo sint non cupiditate ullam. Aut nulla architecto aut debitis omnis ut asperiores sint.
-  </p>
+ <div className='content-links'>
+<a href={'/#about1'}>{AboutContent.contentLink1}</a>
+<a href='/#about2'>{AboutContent.contentLink2}</a>
+<a href={'/#about3'}>{AboutContent.contentLink3}</a> 
+ </div>
+ <div className='content-text'>
+  <div className='content-heading'>{AboutContent.content1Heading}</div>
+ <div className='content1'> {AboutContent.content1} </div>
+ <div className='content-heading'>{AboutContent.content2Heading}</div>
+ <div className='content2'> {AboutContent.content2} </div>
+ <div className='content-heading'>{AboutContent.content3Heading}</div>
+ <div className='content3'> {AboutContent.content3} </div>
+ </div>
 </div>
 </div>
 {/* Section2 */}
-<div className='accordion-tab'>
-<input type='radio' name='acc' id='acc2' />
+<div className='accordion-tab ' id='tab2' onClick={checkboxChecker}>
+<input type='checkbox' name='acc' id='acc2' />
 <label for='acc2'>
-  <h2>02</h2>
-  <h3>Work</h3>
+  <h3 className='heading-title'><span className='heading-number'>{Work.headingNumber}</span>{Work.headingTitle}</h3>
+  <p className='heading-summary'>{Work.headingSummary}</p>
 </label>
 <div className='content'>
-  <p>
-  Lorem ipsum dolor sit amet. At temporibus magni et aliquam totam eos nostrum tempora aut incidunt voluptas ea commodi eaque sit iste incidunt 33 enim nihil. Cum autem minus non doloribus incidunt ea asperiores nulla non assumenda aliquid.
-
-Et expedita fugit nam voluptatem voluptates ut adipisci molestiae vel facere eius et quisquam deserunt. Non recusandae obcaecati qui blanditiis dicta est assumenda dolores quo nemo sint non cupiditate ullam. Aut nulla architecto aut debitis omnis ut asperiores sint.
-  </p>
+<div className='content-links'>
+<a href={'/#about1'}>{WorkContent.contentLink1}</a>
+<a href='/#about2'>{WorkContent.contentLink2}</a>
+<a href={'/#about3'}>{WorkContent.contentLink3}</a> 
+ </div>
+ <div className='content-text'>
+  <div className='content-heading'>{WorkContent.content1Heading}</div>
+ <div className='content1'> {WorkContent.content1} </div>
+ <div className='content-heading'>{WorkContent.content2Heading}</div>
+ <div className='content2'> {WorkContent.content2} </div>
+ <div className='content-heading'>{WorkContent.content3Heading}</div>
+ <div className='content3'> {WorkContent.content3} </div>
+ </div>
 </div>
 </div>
 {/* Section 3 */}
-<div className='accordion-tab'>
-<input type='radio' name='acc' id='acc3' />
+<div className='accordion-tab ' id='tab3' onClick={checkboxChecker}>
+<input type='checkbox' name='acc' id='acc3' />
 <label for='acc3'>
-  <h2>03</h2>
-  <h3>Resume</h3>
+  <h3 className='heading-title'><span className='heading-number'>{Resume.headingNumber}</span>{Resume.headingTitle}</h3>
+  <p className='heading-summary'>{Resume.headingSummary}</p>
 </label>
 <div className='content'>
-  <p>
-  Lorem ipsum dolor sit amet. At temporibus magni et aliquam totam eos nostrum tempora aut incidunt voluptas ea commodi eaque sit iste incidunt 33 enim nihil. Cum autem minus non doloribus incidunt ea asperiores nulla non assumenda aliquid.
-
-Et expedita fugit nam voluptatem voluptates ut adipisci molestiae vel facere eius et quisquam deserunt. Non recusandae obcaecati qui blanditiis dicta est assumenda dolores quo nemo sint non cupiditate ullam. Aut nulla architecto aut debitis omnis ut asperiores sint.
-  </p>
+<div className='content-links'>
+<a href={'/#about1'}>{ResumeContent.contentLink1}</a>
+<a href='/#about2'>{ResumeContent.contentLink2}</a>
+<a href={'/#about3'}>{ResumeContent.contentLink3}</a> 
+ </div>
+ <div className='content-text'>
+  <div className='content-heading'>{ResumeContent.content1Heading}</div>
+ <div className='content1'> {ResumeContent.content1} </div>
+ <div className='content-heading'>{ResumeContent.content2Heading}</div>
+ <div className='content2'> {ResumeContent.content2} </div>
+ <div className='content-heading'>{ResumeContent.content3Heading}</div>
+ <div className='content3'> {ResumeContent.content3} </div>
+ </div>
 </div>
 </div>
-
-  {/* Accordian Heading */}
-{/* <div className='accordianHeading'>
-    <div className='title-container'>
-      <div className='sectionTitle'> <span className='number'>{headingNumber}</span>{headingTitle}</div>
-      <div className='icon' >
-      <svg className='svg-Icon' stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z" clip-rule="evenodd"></path></svg>
-      </div>
-    </div>
-    <div className='summary-container'>
-      <div className='summary'>
-        {headingSummary}
-      </div>
-  </div>
-</div> */}
-
-{/* Accordian Content */}
-  {/* <div className="accordianContent">
-  <div className='content-links'>
-<a href={path1}>{contentLink1}</a>
-<a href={path2}>{contentLink2}</a>
-<a href={path3}>{contentLink3}</a>
-  </div>
-  <div className='content-text'>
-<h2 id={id1} className='contextHeading'>{content1Heading}</h2>
-<div className='content-paragraphs'>
-{content1}
-</div>
-<h2 id={id2} className='contextHeading'> {content2Heading}</h2>
-<div className='content-paragraphs'>
-{content2}
-</div>
-<h2 id={id3} className='contextHeading'> {content3Heading}</h2>
-<div className='content-paragraphs endP'>
-{content3}
-</div>
-  </div>
-</div> */}
    </div> 
   )
 }

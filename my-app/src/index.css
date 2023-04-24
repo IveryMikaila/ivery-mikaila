@@ -1,9 +1,7 @@
 html,body{
   margin: 0;
-  height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
-
 body{
     background-image: url('./assets/images/bgImg3.gif');
     background-size: cover;

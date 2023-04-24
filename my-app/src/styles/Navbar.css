@@ -20,7 +20,7 @@
     font-family: 'Bold-font';
     src: url('../assets/fonts/Raleway-ExtraBold.ttf');
 }
-/* Navbar Styles */
+
 .logo{
     font-family: 'SemiBold-font';
     color: var(--black);
@@ -31,19 +31,22 @@ align-items: center;
     transform: rotate(-180deg);
   writing-mode: vertical-lr;
     float: left;
-    border-left: 1px solid var(--grey);
 width: 10%;
 height: 100%;
+position: sticky;
+z-index: 10;
 }
 .logo:hover{
     color: var(--purple);
 }
 .navBar{
+    margin-left: 10%;
     display: flex;
     justify-content: space-between;
     font-family: 'SemiBold-font';
     color: var(--grey);
    padding-top: 30px;
+   border-left: 1px solid var(--grey);
 }
 .navBar a{
     color: var(--grey);

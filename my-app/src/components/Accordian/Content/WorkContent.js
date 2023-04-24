@@ -35,12 +35,6 @@ const displayWork = ()=>{
             How to customize formatting for each rich text
             Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the "When inside of" nested selector system.`,
     
-            content3: displayWork(),
-            path1:'/#Work1',
-            path2:'/#Work2',
-            path3:'/#Work3', 
-            id1:'Work1',
-            id2:'Work2',
-            id3:'Work3',
+            content3: displayWork()
         }
     ;

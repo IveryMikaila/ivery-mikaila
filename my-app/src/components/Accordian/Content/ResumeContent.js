@@ -97,12 +97,6 @@ PhoneIconHere <span> 347-517-9898</span>
             content3Heading:`Contact Information`,
             content1: Experience(),
             content2:Education(),
-            content3: Contact(),
-            path1:'/#Resume1',
-            path2:'/#Resume2',
-            path3:'/#Resume3', 
-            id1:'Resume1',
-            id2:'Resume2',
-            id3:'Resume3',
+            content3: Contact()
         }
     ;
