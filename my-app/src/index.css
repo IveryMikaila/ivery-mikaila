@@ -1,6 +1,7 @@
 html,body{
   margin: 0;
-  overflow: hidden;
+  height: 100vh;
+  /* overflow: hidden; */
 }
 body{
     background-image: url('./assets/images/bgImg3.gif');

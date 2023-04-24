@@ -47,7 +47,7 @@
     cursor: pointer;
 }
 .accordionWrapper .accordion-tab label::after{
-    content: "+";
+    content: "⊕";
     position: absolute;
     right: 20px;
     font-size: 120px;
@@ -63,24 +63,16 @@
 }
 .accordionWrapper .accordion-tab .content{
 max-height: 0;
-transition:all 1s ease-in-out;
+transition:all 3s ease-in-out;
 opacity: 0;
 }
 .accordionWrapper .accordion-tab input:checked ~ .content{
+    /* max-height: 100vh; */
     max-height: 100vh;
-    height: 100vh;
   overflow: scroll;
   opacity: 1;
 }
 
-  /* @keyframes visible {
-   from {
-     opacity: 0;
-   }
-   to {
-     opacity: 1;
-   }
-  } */
 .heading-title{
     font-size: 100px;
     font-family: 'Bold-font';
@@ -95,3 +87,20 @@ opacity: 0;
     font-family: 'Thin-font';
 }
   
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+   }
+     
+@keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+   }
