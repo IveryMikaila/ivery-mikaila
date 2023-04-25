@@ -21,7 +21,7 @@ const Navbar = () => {
  <Link target='_blank' to={'https://www.shecodes.io/graduates/28712-mikaila-ivery'}>SheCodes</Link>
   </div>
 <div className='navRightLinks'>
-  <span className='emailBtnCaption'>Hello</span>
+  <span className='emailBtnCaption'>Let's Chat</span>
   <Link className='emailButton' to={"mailto:iverymikaila@gmail.com"}>Email Me</Link>
 </div>
     </div>

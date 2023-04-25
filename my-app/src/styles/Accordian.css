@@ -168,15 +168,44 @@ opacity: 0;
     .skills{
         font-family: 'SemiBold-font';
     }
+    .skillsZoom{
+        font-family: 'Thin-font';
+    }
     .skills svg{
         color: var(--purple);
         margin:0 10px;
         font-size: 15px;
+        transition: all 200ms ease-in;
     }
     .contactIcons svg{
      color: var(--purple);
      margin: 0 10px;
     }
+    .resumeDwnld{
+        text-decoration: none;
+        color: var(--black);
+    }
+.svg1:hover{
+    color: #DC4A25;
+    transform: scale(3);
+}
+.svg2:hover{
+    color: #264BDD;
+    transform: scale(3);
+}
+.svg3:hover{
+    color: #F7DF1C;
+    transform: scale(3);
+}
+.svg4:hover{
+    color: #00DCFF;
+    transform: scale(3);
+}
+.svg5:hover{
+    color: #890BFB;
+    transform: scale(3);
+}
+
     @media screen and (max-width: 667px) {
         .experienceHeading{
            width: 100%;
