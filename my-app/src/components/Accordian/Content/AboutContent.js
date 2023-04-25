@@ -8,6 +8,16 @@ const aboutContent1 = ()=>{
         </>
     )
 }
+const aboutContent2 = ()=>{
+    return(
+        <>
+      It all started during my last semester in college. I was originally studying Communications and Journalism then was forced to take an elective in Statistics. This class demolished the fallacies I had about what could be impossible for me. I went into this course thinking I would be just above passing. However, I excelled in this class to such a degree that my teacher recommend I minored in math. Unfortunately, I didn’t end up minoring in math because I decided to “drop out” that semester. I did finish my associate's degree, however, I realized STEM was the path I wanted to take therefore it wasn’t logical to pursue a Bachelor’s degree. 
+      <br/>
+      <br/>
+      One day as I was researching different STEM careers I stumbled across an advertisement for a free sixty-minute coding class by SheCodes Workshops. I attended the free SheCodes introduction course back in 2021. The rest is history. Not only did I graduate with my associate's degree from the Fashion Institute of Technology that year, but also earned my first certificate in Javascript. Learning Javascript for the first time during finals week was definitely the hardest challenge I’ve experienced as a student. Nonetheless, this ordeal forced me to face my subconscious imposter syndrome, not only as a Black person but as a woman as well. I thought I wasn’t “smart” enough to work in STEM. And low and behold, I proved myself wrong.  As a proud She Codes alumni my goal is to demolish the misconceptions about working in STEM and erase the gender gap in a male-dominated industry because we code too. 
+        </>
+    )
+}
 
 
 export const AboutContent = 
@@ -20,20 +30,8 @@ export const AboutContent =
         content3Heading:`What's next for me?`,
         content1:aboutContent1(),
 
-        content2:`The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
+        content2:aboutContent2(),
 
-        Static and dynamic content editing
-        A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!
-        
-        How to customize formatting for each rich text
-        Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the "When inside of" nested selector system.`,
-
-        content3: `The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
-
-        Static and dynamic content editing
-        A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!
-        
-        How to customize formatting for each rich text
-        Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the "When inside of" nested selector system.`
+        content3: `My current goals as a developer include joining an official team and leaving Freelancing behind, as well as growing my knowledge of mobile development. I’m currently sharpening my skills in React Js and React Native to work towards these objectives. I’m also interested in C# in regard to mobile apps and games. Finally, I’m working towards growing my Youtube Channel for future coding tutorials and challenges. Hopefully, we can cross paths along our coding journeys!`
     }
 ;
