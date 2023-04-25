@@ -13,27 +13,15 @@ const displayWork = ()=>{
     
     export const WorkContent = 
         {
-            contentLink1:`School Projects`,
+            contentLink1:`Personal/Education Projects`,
             contentLink2: `Freelance Developer`,
             contentLink3:`Work`,
-            content1Heading:`School / Personal Projects`,
+            content1Heading:`Personal/Education Projects`,
             content2Heading:`Freelance Front-end Developer`,
             content3Heading:`Work`,
-            content1:`The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
+            content1:`The majority of my personal projects include recreating web designs I find online in React Js or Vanilla Javascript. However, my most recent projects include Candyl and Job-list app. Candyl is a fake company I created that sells candles made of candy. The purpose of this project was to build an e-commerce store from scratch using Commerce Js API for the backend. Job-list is a mobile app prototype that helps you search for a job using a keyword in the search input. I used the J search API and React Native for that endeavor. My educational projects are based on assignments administered by SheCodes. My most notable projects from SheCodes include my dictionary app and weather app. The Weather app project was built using the Open Weather Map API, and the dictionary app was built using Google Dictionary API.`,
     
-            Static and dynamic content editing
-            A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!
-            
-            How to customize formatting for each rich text
-            Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the "When inside of" nested selector system.`,
-    
-            content2:`The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.
-    
-            Static and dynamic content editing
-            A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!
-            
-            How to customize formatting for each rich text
-            Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the "When inside of" nested selector system.`,
+            content2:`I currently work as a Freelance Front-end Developer for Boy Blondey Co and Orée NYC. I bring my client’s vision to life by coding custom HTML, CSS, and Javascript then adding that to their Shopify themes. The predominant of my freelance clients are from Shopify, including another client I worked with recently at Brooklyn House of Hair LLC. I also help in the actual web design process based on my client’s values and goals. `,
     
             content3: displayWork()
         }
