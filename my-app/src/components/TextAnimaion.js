@@ -12,6 +12,7 @@ const title = titleRef.current;
 gsap.fromTo(title,
     { x:300},
     { x:-300,duration:5,
+      // repeat:true,
          scrollTrigger:{
          trigger:title,
 
