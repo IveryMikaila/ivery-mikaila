@@ -1,18 +1,48 @@
+import {Link} from 'react-router-dom';
+
 //Import Css
 import '../../../styles/Work.css';
 //Import Component
-
-
-import textImg from '../../../assets/images/bgImg3.gif'
+import TextAnimaion from '../../TextAnimaion';
 
 const displayWork = ()=>{
     return(
     <>
-    <p>*Images will go here*</p>
-    <img src={textImg} style={{width:'100px'}} alt='randomTest' />
+    {/* Project 1 */}
     <div className='projectCard'>
-
+<TextAnimaion projectTitle={"Boy Blondey"} />
+<Link to={'https://boyblondey.com/'} target='_blank'>
+<div className='projectImg Img1'/>
+</Link>
     </div>
+    {/*Project 2  */}
+    <div className='projectCard'>
+    <TextAnimaion projectTitle={"BK House of Hair"} />
+<Link to={'https://brooklynhouseofhairllc.com/'} target='_blank'>
+<div className='projectImg Img2'/>
+</Link>
+    </div>
+    {/* Project 3 */}
+    <div className='projectCard'>
+    <TextAnimaion projectTitle={"Candyl"} />
+<Link to={'https://candyl.netlify.app/'} target='_blank'>
+<div className='projectImg Img3'/>
+</Link>
+    </div>
+    {/* Project 4 */}
+    <div className='projectCard card4'>
+    <TextAnimaion projectTitle={"Job-list"} />
+<Link to={'https://expo.dev/@mdesigns/joblist-react?serviceType=classic&distribution=expo-go'} target='_blank'>
+<div className='projectImg Img4'/>
+</Link>
+    </div>
+    {/* Project 5 */}
+    {/* <div className='projectCard'>
+*Image Ttile will go here*
+<Link to={''} target='_blank'>
+<div className='projectImg Img5'/>
+</Link>
+    </div> */}
     </>
     );
     };

@@ -1,0 +1,79 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --purple:#8F00FF;
+    --grey:#D3D4D4;
+}
+@font-face {
+    font-family: 'Thin-font';
+    src: url('../assets/fonts/Raleway-Thin.ttf');
+}
+@font-face {
+    font-family: 'Regular-font';
+    src: url('../assets/fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'SemiBold-font';
+    src: url('../assets/fonts/Raleway-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Bold-font';
+    src: url('../assets/fonts/Raleway-ExtraBold.ttf');
+}
+
+
+.projectCard{
+    margin: 50px;
+}
+.projectImg{
+    width: 700px;
+    height: 382px;
+}
+.projectCard a{
+color: var(--black);
+}
+.Img1{
+    background-image: url('../assets/images/projects/BBHome.png');
+    background-size: contain;
+}
+.Img1:hover{
+background-image: url('../assets//images/projects/bb.gif');
+background-repeat: no-repeat;
+}
+
+.Img2{
+    background-image: url('../assets//images/projects/BKHome.png');
+    background-size: contain;
+}
+.Img2:hover{
+    background-image: url('../assets/images/projects/BK.gif');
+    background-repeat: no-repeat;
+}
+.Img3{
+    background-image: url('../assets/images/projects/candylHome.png');
+    background-size: contain;
+}
+.Img3:hover{
+    background-image: url('../assets/images/projects/candyl.gif');
+    background-repeat: no-repeat;
+}
+.Img4{
+    width:234px;
+    height: 500px;
+    background-image: url('../assets/images/projects/jobHome.PNG');
+    background-size: contain;
+}
+.Img4:hover{
+    background-image: url('../assets/images/projects/job.gif');
+    background-repeat: no-repeat;
+}
+.card4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.projectTitle{
+    font-family: 'Thin-font';
+    font-size: 75px;
+}
