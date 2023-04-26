@@ -1,3 +1,8 @@
+//Import Css
+import '../../../styles/Work.css';
+//Import Component
+
+
 import textImg from '../../../assets/images/bgImg3.gif'
 
 const displayWork = ()=>{
@@ -5,6 +10,9 @@ const displayWork = ()=>{
     <>
     <p>*Images will go here*</p>
     <img src={textImg} style={{width:'100px'}} alt='randomTest' />
+    <div className='projectCard'>
+
+    </div>
     </>
     );
     };
