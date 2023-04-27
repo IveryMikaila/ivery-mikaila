@@ -1,48 +1,47 @@
+//React Imports
 import {Link} from 'react-router-dom';
 
-//Import Css
+//Css Import
 import '../../../styles/Work.css';
-//Import Component
-import TextAnimaion from '../../TextAnimaion';
+
+//Component Imports 
+// import TextAnimaion from '../../TextAnimaion';
 
 const displayWork = ()=>{
     return(
     <>
-    {/* Project 1 */}
-    <div className='projectCard'>
-<TextAnimaion projectTitle={"Boy Blondey"} />
-<Link to={'https://boyblondey.com/'} target='_blank'>
-<div className='projectImg Img1'/>
-</Link>
+<div className='projectContainer'>
+
+    <div className='projectCard card1'>
+        <Link to={'https://boyblondey.com/'} target='_blank' className='title1'>
+        <div className='projectTitle'>Boy Blondey</div>
+        </Link>
     </div>
-    {/*Project 2  */}
-    <div className='projectCard'>
-    <TextAnimaion projectTitle={"BK House of Hair"} />
-<Link to={'https://brooklynhouseofhairllc.com/'} target='_blank'>
-<div className='projectImg Img2'/>
-</Link>
+
+ <div className='projectCard card2'>
+        <Link to={'https://brooklynhouseofhairllc.com/'} target='_blank' className='title2'>
+        <div className='projectTitle'>House of Hair</div>
+        </Link>
     </div>
-    {/* Project 3 */}
-    <div className='projectCard'>
-    <TextAnimaion projectTitle={"Candyl"} />
-<Link to={'https://candyl.netlify.app/'} target='_blank'>
-<div className='projectImg Img3'/>
-</Link>
+
+    <div className='projectCard card3'>
+        <Link to={'https://candyl.netlify.app/'} target='_blank' className='title3'>
+        <div className='projectTitle'>Candyl</div>
+        </Link>
     </div>
-    {/* Project 4 */}
+
     <div className='projectCard card4'>
-    <TextAnimaion projectTitle={"Job-list"} />
-<Link to={'https://expo.dev/@mdesigns/joblist-react?serviceType=classic&distribution=expo-go'} target='_blank'>
-<div className='projectImg Img4'/>
-</Link>
+        <Link to={'https://expo.dev/@mdesigns/joblist-react?serviceType=classic&distribution=expo-go'} target='_blank' className='title4'>
+        <div className='projectTitle'>Job-list</div>
+        </Link>
     </div>
-    {/* Project 5 */}
-    {/* <div className='projectCard'>
-*Image Ttile will go here*
-<Link to={''} target='_blank'>
-<div className='projectImg Img5'/>
-</Link>
+
+    {/* <div className='projectCard card5'>
+        <Link to={''} target='_blank' className='title5'>
+        <div className='projectTitle'></div>
+        </Link>
     </div> */}
+</div>
     </>
     );
     };

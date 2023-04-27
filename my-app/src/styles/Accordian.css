@@ -28,8 +28,10 @@
     padding-top: 30px;
     border-left: 1px solid var(--grey);
     overflow: hidden;
+    min-height: 100vh;
 }
 .accordionWrapper .accordion-tab{
+    /* flex-grow: 1; */
     position: relative;
     background:transparent;
     overflow: hidden;
@@ -37,6 +39,9 @@
     padding: 30px;
     padding-top: 0;
     transition: all 3s ease-in-out;
+}
+.tab3{
+    flex-grow: 1;
 }
 .accordionWrapper .accordion-tab input{
     appearance: none;
@@ -130,20 +135,18 @@ opacity: 0;
         border: none;
     }
     .heading-title{
-        font-size: 70px;
+        font-size: 50px;
     }
     .heading-number{
-        font-size: 70px;
+        font-size: 50px;
         margin-right: 20px;
     }
     .accordionWrapper .accordion-tab label::after{
-        font-size: 70px;
-    }
-    .accordionWrapper .accordion-tab{
-        padding: 25px;
+        font-size: 50px;
     }
 .heading-summary{
     width: 100%;
+    font-size: 16px;
     margin: 0;
 }
 .content{
@@ -209,6 +212,13 @@ opacity: 0;
     @media screen and (max-width: 667px) {
         .experienceHeading{
            width: 100%;
+        }
+        .contactIcons{
+            display: flex;
+            flex-direction: column;
+        }
+        .contactIcons span{
+            margin-bottom: 10px;
         }
 
     }

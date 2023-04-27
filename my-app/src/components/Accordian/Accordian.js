@@ -92,7 +92,7 @@ else{
 </div>
 </div>
 {/* Section 3 */}
-<div className='accordion-tab ' id='tab3' onClick={checkboxChecker}>
+<div className='accordion-tab tab3' id='tab3' onClick={checkboxChecker}>
 <input type='checkbox' name='acc' id='acc3' />
 <label for='acc3'>
 <span className='heading-number'>{Resume.headingNumber}</span>

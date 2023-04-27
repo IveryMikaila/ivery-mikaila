@@ -21,78 +21,50 @@
     src: url('../assets/fonts/Raleway-ExtraBold.ttf');
 }
 
-
-.projectCard{
-    margin: 50px;
-}
-.projectImg{
-    width: 700px;
-    height: 382px;
-}
-.projectCard a{
-color: var(--black);
-}
-.Img1{
-    background-image: url('../assets/images/projects/BBHome.png');
-    background-size: contain;
-}
-.Img1:hover{
-background-image: url('../assets//images/projects/bb.gif');
-background-repeat: no-repeat;
-}
-
-.Img2{
-    background-image: url('../assets//images/projects/BKHome.png');
-    background-size: contain;
-}
-.Img2:hover{
-    background-image: url('../assets/images/projects/BK.gif');
-    background-repeat: no-repeat;
-}
-.Img3{
-    background-image: url('../assets/images/projects/candylHome.png');
-    background-size: contain;
-}
-.Img3:hover{
-    background-image: url('../assets/images/projects/candyl.gif');
-    background-repeat: no-repeat;
-}
-.Img4{
-    width:234px;
-    height: 500px;
-    background-image: url('../assets/images/projects/jobHome.PNG');
-    background-size: contain;
-}
-.Img4:hover{
-    background-image: url('../assets/images/projects/job.gif');
-    background-repeat: no-repeat;
-}
-.card4{
+.projectContainer{
     display: flex;
-    flex-direction: column;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    border-bottom: 1px solid black;
+}
+.projectCard{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    width: 750px;
+    height: 500px;
+    margin: 10px 10px 10px 90px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
-.projectTitle{
-    font-family: 'Thin-font';
-    font-size: 75px;
+
+.projectCard a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 120px;
 }
-@media screen and (max-width: 667px) {
-    .projectTitle{
-        display: none;
-    }
-    .projectImg{
-        width: 300px;
-        height: 163px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .Img1:hover,.Img2:hover,.Img3:hover,.Img4:hover{
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .Img4{
-        width:98px;
-        height: 200px;
-    }
+
+/* Project Images */
+/* .card1:hover{
+    background-image: url('../assets/images/projects/bb.gif');
+    background-size: contain;
 }
+.card1:hover > .title1{
+    opacity: 0;
+}
+
+.card2:hover{
+    background-image: url('../assets/images/projects/BK.gif');
+    background-size: contain;
+}
+.card2:hover > .title2{
+    opacity: 0;
+}
+
+.card3:hover{
+    background-image: url('../assets/images/projects/candyl.gif');
+    background-size: contain;
+}
+.card3:hover > .title3{
+    opacity: 0;
+} */
