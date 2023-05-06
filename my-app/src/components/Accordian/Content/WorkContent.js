@@ -6,42 +6,12 @@ import '../../../styles/Work.css';
 
 //Component Imports 
 // import TextAnimaion from '../../TextAnimaion';
+import Slides from '../../Slides';
 
 const displayWork = ()=>{
     return(
     <>
-<div className='projectContainer'>
-
-    <div className='projectCard card1'>
-        <Link to={'https://boyblondey.com/'} target='_blank' className='title1'>
-        <div className='projectTitle'>Boy Blondey</div>
-        </Link>
-    </div>
-
- <div className='projectCard card2'>
-        <Link to={'https://brooklynhouseofhairllc.com/'} target='_blank' className='title2'>
-        <div className='projectTitle'>House of Hair</div>
-        </Link>
-    </div>
-
-    <div className='projectCard card3'>
-        <Link to={'https://candyl.netlify.app/'} target='_blank' className='title3'>
-        <div className='projectTitle'>Candyl</div>
-        </Link>
-    </div>
-
-    <div className='projectCard card4'>
-        <Link to={'https://expo.dev/@mdesigns/joblist-react?serviceType=classic&distribution=expo-go'} target='_blank' className='title4'>
-        <div className='projectTitle'>Job-list</div>
-        </Link>
-    </div>
-
-    {/* <div className='projectCard card5'>
-        <Link to={''} target='_blank' className='title5'>
-        <div className='projectTitle'></div>
-        </Link>
-    </div> */}
-</div>
+    <Slides />
     </>
     );
     };
