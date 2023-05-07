@@ -9,13 +9,11 @@ const Experience = ()=>{
     <h1 className="date">2022 - Present</h1>
     </div>
    <ul>
-    <li>Freelance Developer / designer for Boy Blondey Co</li>
+    <li> Developed and designed custom HTML, CSS, and Javascript for Shopify clients, resulting in improved website functionality and customer satisfaction.</li>
     <br/>
-    <li>Freelance Developer / designer for Orée NYC </li>
+    <li>Maintained quality website functionality through ongoing updates and troubleshooting. </li>
     <br/>
-    <li>Web development for BloodnGlory (Shopify Client)</li>
-    <br/>
-    <li>Web development / design for Brooklyn House of Hair LLC (Shopify Client)</li>
+    <li>Created visually appealing prototypes on Figma or Canva that accurately reflected client needs and preferences.</li>
    </ul>
        {/* Job 2 */}
        <div className='experienceHeading'>
