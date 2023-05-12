@@ -23,16 +23,19 @@ export default function Slides() {
         className="mySwiper"
       >
         <SwiperSlide className="card1">
-        <Link className="link1" to={'https://boyblondey.com/'} target="_blank">View</Link>
+       <Link to={'#'} target="_blank" className="link">Waist Away by Moojy (old site)</Link>
         </SwiperSlide>
         <SwiperSlide className="card2">
-<Link to={'https://brooklynhouseofhairllc.com/'} target="_blank" className="link2">View</Link>
+        <Link className="link" to={'https://boyblondey.com/'} target="_blank">View</Link>
             </SwiperSlide>
         <SwiperSlide className="card3">
-<Link to={'https://candyl.netlify.app/'} target="_blank" className="link3">View</Link>
+        <Link to={'https://brooklynhouseofhairllc.com/'} target="_blank" className="link">View</Link>
         </SwiperSlide>
         <SwiperSlide className="card4">
-          <Link to={'https://expo.dev/@mdesigns/joblist-react?serviceType=classic&distribution=expo-go'} target="_blank" className="link4">View</Link>
+        <Link to={'https://candyl.netlify.app/'} target="_blank" className="link">View</Link>
+        </SwiperSlide>
+        <SwiperSlide className="card5">
+          <Link to={'https://expo.dev/@mdesigns/joblist-react?serviceType=classic&distribution=expo-go'} target="_blank" className="link">View</Link>
         </SwiperSlide>
       </Swiper>
     </>

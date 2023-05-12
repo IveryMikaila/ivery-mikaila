@@ -157,6 +157,32 @@ opacity: 0;
 }
     }
 
+
+    @media only screen and (max-width: 280px) and (min-width: 100px)  {
+
+        .heading-title{
+            font-size: 30px;
+        }
+        .heading-number{
+            font-size: 30px;
+            margin-right: 20px;
+        }
+        .accordionWrapper .accordion-tab label::after{
+            font-size: 30px;
+        }
+    .heading-summary{
+        width: 100%;
+        font-size: 12px;
+        margin: 0;
+    }
+    .content-heading{
+        font-size: 20px;
+    }
+   
+    }
+    
+
+
     /* Resume Styles */
     .experienceHeading{
         display: flex;

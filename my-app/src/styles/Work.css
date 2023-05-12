@@ -40,47 +40,58 @@
   }
   
 .card1{
-    background-image: url('../assets/images/projects/BBHome.png');
-    background-size: contain;
+    background-image: url('../assets/images/projects/WAHome.png');
+    background-size:contain;
     background-repeat: no-repeat;
 }
 .card1:hover{
-    background-image: url('../assets/images/projects/bb.gif');
+    background-image: url('../assets/images/projects/WA.gif');
     background-size: contain;
     background-repeat: no-repeat;
 }
-.link1,.link2,.link3,.link4{
+.link{
   text-decoration: none;
     color: var(--black);
     position: relative;
     top: 90%;
-    left: 80%;
+   margin-left: 10px;
 }
 
 .card2{
-    background-image: url('../assets/images/projects/BKHome.png');
+    background-image: url('../assets/images/projects/BBHome.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
-.card2:hover:hover{
-    background-image: url('../assets/images/projects/BK.gif');
+.card2:hover{
+    background-image: url('../assets/images/projects/bb.gif');
     background-size: contain;
     background-repeat: no-repeat;
 }
 .card3{
-    background-image: url('../assets/images/projects/candylHome.png');
+    background-image: url('../assets/images/projects/BKHome.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
-.card3:hover:hover{
-    background-image: url('../assets/images/projects/candyl.gif');
+.card3:hover{
+    background-image: url('../assets/images/projects/BK.gif');
     background-size: contain;
     background-repeat: no-repeat;
 }
 .card4{
-    background-image: url('../assets/images/projects/jobHome.PNG');
-    background-size: cover;
+    background-image: url('../assets/images/projects/candylHome.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+.card4:hover{
+  background-image: url('../assets/images/projects/candyl.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card5{
+  background-image: url('../assets/images/projects/jobHome.PNG');
+  background-size: cover;
+}
+
 
   .swiper-slide:nth-child(1n) {
     background-color: white;
@@ -108,10 +119,20 @@
     height: 200px;
     }
     
-    .link1,.link2,.link3,.link4{
+    .link{
       font-size: 16px;
-        top: 85%;
-        left: 80%;
+      top: 80%;
     }
+}
+
+@media only screen and (max-width: 280px) and (min-width: 100px)  {
+  .swiper {
+    width:180px;
+  height: 100px;
+  }
+  .link{
+    display: none;
+  }
+
 }
   
