@@ -43,7 +43,7 @@ const Experience = ()=>{
          {/* College */}
         <div className='experienceHeading'>
         <h1>AAS in Communications<br/>Fashion Institute of Technology</h1>
-        <h1 className="date">2019 - 2022</h1>
+        <h1 className="date">2019 - 2021</h1>
         </div>
        <ul>
         <li>National Society of Leadership and Success nominee/member</li>
@@ -59,6 +59,17 @@ const Experience = ()=>{
         <li>Certificate ID: d612b3f586475714368519fef0c7cb09</li>
         <li>
             <a className="resumeContentLinkz" target="_blank" href="https://www.shecodes.io/certificates/d612b3f586475714368519fef0c7cb09">View Here</a>
+        </li>
+       </ul>
+               {/* HTML Email Cert */}
+               <div className='experienceHeading'>
+        <h1>HTML Email Bootcamp</h1>
+        <h1 className="date">2022</h1>
+        </div>
+       <ul>
+       <li>Certificate ID: 5e75641e-8b03-44ae-9973-77d28e46589f</li>
+        <li>
+            <a className="resumeContentLinkz" target="_blank" href="https://www.nobledesktop.com/credentials/5e75641e-8b03-44ae-9973-77d28e46589f">View Here</a>
         </li>
        </ul>
            {/* NSLS Cert */}
